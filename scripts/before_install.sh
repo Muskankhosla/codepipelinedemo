@@ -7,7 +7,7 @@ cd /home/ubuntu
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
 #_Download_Node_&NPM
-apt-get install -y nodejs
+sudo apt-get install -y nodejs
 
 #_Download_PM2
-npm install pm2@latest -g
+sudo npm install pm2@latest -g
