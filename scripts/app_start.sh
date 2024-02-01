@@ -1,10 +1,13 @@
 #!/bin/bash
 
-#_Change_Working_Directory
+# Change Working Directory
 cd /home/ec2-user/server
 
-#_Delete_Old_PM2_Service
-#sudo pm2 delete Frontend
-#sudo pm2 start server.js --name Frontend
+# Install PM2 if not already installed
+npm install -g pm2
+
+# Delete Old PM2 Service, if exists
 pm2 delete Frontend
+
+# Start the PM2 service
 pm2 start server.js --name Frontend
